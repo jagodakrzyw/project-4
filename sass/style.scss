@@ -1,0 +1,24 @@
+/* Variables */
+
+$color-first: white;
+$color-second: black;
+$color-third: hsl(0, 0%, 80%);
+
+$font-main: "Poppins", sans-serif;
+$font-second: "Dancing Script", cursive;
+
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-main;
+  color: black;
+}
