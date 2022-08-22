@@ -2,7 +2,8 @@
 
 $color-first: white;
 $color-second: black;
-$color-third: hsl(0, 0%, 80%);
+$color-third: gold;
+$color-fourth: hsl(0, 0%, 80%);
 
 $font-main: "Poppins", sans-serif;
 $font-second: "Dancing Script", cursive;
@@ -27,19 +28,28 @@ body {
 
 .navigation {
   padding: 16px 0;
+  background: inherit;
+}
 
-  .navigation ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
+.navigation ul {
+  padding: 0;
+  margin: 40px 0;
+  list-style-type: none;
+  text-align: right;
+}
 
-  .navigation li {
-    display: inline-block;
-    position: relative;
-  }
+.navigation li {
+  display: inline-block;
+  padding: 0 20px;
+}
 
-  .navigation a {
-    text-decoration: none;
-  }
+.navigation a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 30px;
+  color: $color-third;
+  font-family: $font-second;
+  font-weight: 800;
 }
