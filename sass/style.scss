@@ -22,3 +22,24 @@ body {
   font-family: $font-main;
   color: black;
 }
+
+/* Navigation */
+
+.navigation {
+  padding: 16px 0;
+
+  .navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .navigation li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .navigation a {
+    text-decoration: none;
+  }
+}
