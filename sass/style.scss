@@ -195,8 +195,19 @@ body {
   border-radius: 50%;
   transition: $transition;
   text-align: center;
+  padding: 10px;
 }
 
 .footer i:hover {
   transform: scale(1.2);
+}
+
+/* Media */
+
+@media (max-width: 500px) {
+  
+  .page-subtitle {
+    font-size: 50px;
+  }
+  
 }
