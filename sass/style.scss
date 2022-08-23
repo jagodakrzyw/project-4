@@ -113,14 +113,35 @@ body {
 
 .section-subtitle {
   font-size: 20px;
+  margin: 0;
 }
 
 .section-text {
   color: $color-fourth;
+  margin-top: 0;
+  padding-bottom: 30px;
 }
 
 .portfolio {
   background-color: $color-fifth;
+}
+
+.portfolio-box {
+  background-color: $color-first;
+  min-height: 300px;
+  margin-bottom: 50px;
+}
+
+.portfolio-img {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-img img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;  
+  margin-bottom: 20px;
 }
 
 .main i {
@@ -134,12 +155,7 @@ body {
   outline: 3px solid $color-third;
   outline-offset: 15px;
   margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.main img {
-  max-width: 300px;
-  max-height: 200px;
+  margin-bottom: 40px;
 }
 
 /* Footer */
