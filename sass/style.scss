@@ -1,13 +1,13 @@
 /* Variables */
 
-$color-first: white;
-$color-second: black;
-$color-third: gold;
-$color-fourth: hsl(0, 0%, 50%);
-$color-fifth: hsl(0, 0%, 96%);
+$color-primary: gold;
+$color-bg-primary: white;
+$color-bg-secondary: hsl(0, 0%, 96%);
+$color-text: black;
+$color-text-secondary: hsl(0, 0%, 50%);
 
 $font-main: "Poppins", sans-serif;
-$font-second: "Dancing Script", cursive;
+$font-logo: "Dancing Script", cursive;
 
 $transition: all 1s;
 
@@ -27,15 +27,10 @@ body {
   color: black;
 }
 
-.row {
-  
-}
-
 /* Navigation */
 
 .navigation {
   padding: 16px 0;
-  background: inherit;
 }
 
 .navigation ul {
@@ -52,13 +47,13 @@ body {
 
 .navigation a {
   text-decoration: none;
-  color: $color-first;
+  color: $color-bg-primary;
 }
 
 .logo {
   font-size: 30px;
-  color: $color-third;
-  font-family: $font-second;
+  color: $color-primary;
+  font-family: $font-logo;
   font-weight: 800;
 }
 
@@ -67,13 +62,13 @@ body {
 .splash {
   min-height: 500px;
   background-image: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg");
-  background-size: 100%;
-  color: $color-first;
+  background-size: cover;
+  color: $color-bg-primary;
   text-align: center;
 }
 
 .page-title {
-  font-family: $font-second;
+  font-family: $font-logo;
   font-size: 50px;
   margin: 30px 0 0 0;
 }
@@ -82,20 +77,22 @@ body {
   font-size: 80px;
   margin: 0;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-.btn-one {
+.btn-primary {
   padding: 20px;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 150px;
   margin-top: 30px;
-  background-color: $color-third;
-  color: $color-first;
+  background-color: $color-primary;
+  color: $color-bg-primary;
   border-radius: 8px;
   border: none; 
+  font-weight: bold;
 }
 
-.btn-one:hover {
+.btn-primary:hover {
   cursor: pointer;
 }
 
@@ -108,13 +105,13 @@ body {
 
 .main i {
   font-size: 50px;
-  background-color: $color-first;
+  background-color: $color-bg-primary;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   line-height: 60px;
-  color: $color-third;
-  outline: 3px solid $color-third;
+  color: $color-primary;
+  outline: 3px solid $color-primary;
   outline-offset: 15px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -124,13 +121,14 @@ body {
   font-size: 40px;
   font-weight: bold;
   margin: 5px 0;
+  text-transform: uppercase;
 }
 
 .section-description {
   font-style: italic;
   margin-top: 0;
   margin-bottom: 50px;
-  color: $color-fourth;
+  color: $color-text-secondary;
 }
 
 .section-subtitle {
@@ -139,7 +137,7 @@ body {
 }
 
 .section-text {
-  color: $color-fourth;
+  color: $color-text-secondary;
   margin-top: 0;
   padding-right: 20px;
   padding-left: 20px;
@@ -149,11 +147,11 @@ body {
 /* Portfolio section */
 
 .portfolio {
-  background-color: $color-fifth;
+  background-color: $color-bg-secondary;
 }
 
 .portfolio-box {
-  background-color: $color-first;
+  background-color: $color-bg-primary;
   min-height: 300px;
   margin-bottom: 50px;
 }
@@ -174,6 +172,7 @@ body {
 
 .footer {
   margin: 30px 0;
+  text-align: center;
 }
 
 .footer ul {
@@ -186,23 +185,48 @@ body {
   font-size: 0;
 }
 
+.footer li i:hover {
+  transform: scale(1.2);
+}
+
+.link {
+  text-decoration: none;
+  color: $color-text;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: underline;
+}
+
 .social-media-icon {
   font-size: 20px;
-  background: $color-second;
+  background: $color-text;
   width: 40px;
   height: 40px;
-  color: $color-first;
+  color: $color-bg-primary;
   border-radius: 50%;
   transition: $transition;
   text-align: center;
   padding: 10px;
 }
 
-.footer i:hover {
-  transform: scale(1.2);
-}
-
 /* Media */
+
+@media (max-width: 800px) {
+  
+  .navigation ul {
+    text-align: center;
+  }
+
+}
 
 @media (max-width: 500px) {
   
